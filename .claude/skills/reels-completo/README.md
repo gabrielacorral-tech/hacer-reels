@@ -3,7 +3,7 @@
 Un solo skill para Claude Code: instala las herramientas, aprende tu estilo de 3 videos de referencia, edita tus grabaciones con storyboard previo, revisa cada corte y aprende de tus correcciones.
 
 ## Instalar
-Copiá esta carpeta a `~/.claude/skills/reels-completo`.
+Abrí Claude Code dentro del repo `hacer-reels` (lo carga solo), o copiá esta carpeta a `~/.claude/skills/reels-completo`.
 
 ## Usar
 1. `instalá las herramientas de edición`
