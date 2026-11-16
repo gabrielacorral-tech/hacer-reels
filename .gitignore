@@ -1,0 +1,4 @@
+__pycache__/
+node_modules/
+*.parcial.mp4
+.DS_Store
