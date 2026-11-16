@@ -12,7 +12,7 @@ let chromium;
 try {
   ({ chromium } = createRequire(AQUI + '/')('playwright'));
 } catch {
-  console.error(`Falta Playwright. Instalalo con: cd "${AQUI}" && npm install && npx playwright install chromium`);
+  console.error(`Falta Playwright. Instálalo con: cd "${AQUI}" && npm install && npx playwright install chromium`);
   process.exit(1);
 }
 const [html, mp4, W = 1080, H = 1920, FPS = 30] = process.argv.slice(2);

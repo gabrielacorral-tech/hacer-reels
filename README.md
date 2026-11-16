@@ -12,9 +12,9 @@ cd hacer-reels
 claude
 ```
 
-Y escribí: `instalá las herramientas de edición`, `aprendé este estilo: <links>` o `editá este reel: <archivo>`.
+Y escribe: `instala las herramientas de edición`, `aprende este estilo: <links>` o `edita este reel: <archivo>`.
 
-Las correcciones se guardan en el propio repo (`correcciones.md`, `preferencias.md`, `hoja-de-marca.md`), así que se versionan con `git`. Si el repo es público, revisá que no tengan datos personales.
+Las correcciones se guardan en el propio repo (`correcciones.md`, `preferencias.md`, `hoja-de-marca.md`), así que se versionan con `git`. Si el repo es público, revisa que no tengan datos personales.
 
 Para usarlo en cualquier carpeta: `cp -r .claude/skills/reels-completo ~/.claude/skills/`.
 

@@ -101,4 +101,4 @@ for ini, fin, t in filas:
     print(f'{ini:6.2f}–{fin:6.2f}  {re.sub(r"{[^}]*}", "", t)}')
 with open(os.path.join(a.carpeta, 'subtitulos.ass'), 'w') as f:
     f.write(ass)
-print(f'{len(filas)} subtítulos. Leé cada línea antes de armar.')
+print(f'{len(filas)} subtítulos. Lee cada línea antes de armar.')

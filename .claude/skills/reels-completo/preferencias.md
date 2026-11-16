@@ -1,20 +1,20 @@
 # Mis preferencias de edición
 
 Claude lee este archivo antes de cada edición. Claude no pregunta lo que este archivo responde.
-Cuando des una indicación para próximos reels, Claude la suma acá, con la fecha y tu frase.
+Cuando des una indicación para próximos reels, Claude la suma aquí, con la fecha y tu frase.
 
-No hace falta completarlo a mano. Pedile a Claude: "configurá mi skill de edición".
+No hace falta completarlo a mano. Pídele a Claude: "configura mi skill de edición".
 
-## Quién sos
+## Quién eres
 
 - Tema de tus reels: [COMPLETAR]
 - Idioma de tus reels: [COMPLETAR]
-- Cómo grabás (celular, cámara, teleprompter, improvisado): [COMPLETAR]
+- Cómo grabas (celular, cámara, teleprompter, improvisado): [COMPLETAR]
 - Tres videos que te gustaría igualar, con su link o archivo: [COMPLETAR]
 
 ## Formatos
 
-Definí de 1 a 4 formatos. Cada formato tiene su estructura.
+Define de 1 a 4 formatos. Cada formato tiene su estructura.
 
 | Formato | Cuándo se usa | Estructura |
 |---|---|---|
@@ -48,7 +48,7 @@ Los valores exactos van en `estilo.json`.
 - Qué lleva cada formato (capturas, clips, animaciones, memes): [COMPLETAR]
 - Cuánto se ve tu cara, en proporción del reel: [COMPLETAR]
 - Colores y tipografías de tus animaciones: [COMPLETAR]
-- Cosas que nunca querés ver: [COMPLETAR]
+- Cosas que nunca quieres ver: [COMPLETAR]
 
 ## Audio
 
@@ -60,11 +60,11 @@ Los valores exactos van en `estilo.json`.
 
 - Qué puede hacer Claude sin preguntar: [COMPLETAR]
 - Qué tiene que consultar siempre: [COMPLETAR]
-- Cuándo querés ver la lista de planos antes del armado: [COMPLETAR]
+- Cuándo quieres ver la lista de planos antes del armado: [COMPLETAR]
 
 ## Entrega
 
 - Dónde está el material de cada reel: [COMPLETAR]
 - Dónde va el reel terminado: [COMPLETAR]
-- Cómo marcás los cambios (chat, comentarios en una app, otra forma): [COMPLETAR]
-- Cuánto detalle querés en el mensaje de entrega: [COMPLETAR]
+- Cómo marcas los cambios (chat, comentarios en una app, otra forma): [COMPLETAR]
+- Cuánto detalle quieres en el mensaje de entrega: [COMPLETAR]

@@ -29,7 +29,7 @@ with open(os.path.basename(a.plan)) as f:
     P = json.load(f)
 salida = P['salida']
 if os.path.exists(salida) and not a.pisar:
-    raise SystemExit(f'{salida} ya existe. Cambiá el nombre: -v2, -v3. Así no se pisa una versión entregada.')
+    raise SystemExit(f'{salida} ya existe. Cambia el nombre: -v2, -v3. Así no se pisa una versión entregada.')
 
 v = next(s for s in sondear(P['base'])['streams'] if s['codec_type'] == 'video')
 W, H = v['width'], v['height']
@@ -107,7 +107,7 @@ os.replace(temporal, salida)
 esperados, reales = cuadros(P['base']), cuadros(salida)
 print(f'{salida}: {reales} cuadros, {duracion(salida):.2f} s')
 if esperados != reales:
-    print(f'CUADROS: esperaba {esperados} y salieron {reales}. Revisá la sincronía.')
+    print(f'CUADROS: esperaba {esperados} y salieron {reales}. Revisa la sincronía.')
 r = subprocess.run(['ffmpeg', '-hide_banner', '-i', salida, '-af', 'loudnorm=print_format=json', '-f', 'null', '-'],
                    capture_output=True, text=True).stderr
 print(f"Volumen: {json.loads(re.findall(r'{[^{}]*}', r)[-1])['input_i']} LUFS, pedido {L}")

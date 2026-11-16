@@ -16,7 +16,7 @@ p.add_argument('--guion')
 a = p.parse_args()
 m = modelo()
 if not m:
-    raise SystemExit('Falta el modelo de whisper. Corré revisar_entorno.py.')
+    raise SystemExit('Falta el modelo de whisper. Ejecuta revisar_entorno.py.')
 with open(os.path.join(a.carpeta, 'cortes.json')) as f:
     cortes = json.load(f)
 audio = os.path.join(a.carpeta, 'editado16k.wav')
@@ -65,7 +65,7 @@ for i in range(1, len(tr)):
         pw = tr[j][3]
         for n in range(min(6, len(w)), 1, -1):
             if any(pw[k:k + n] == w[:n] for k in range(len(pw) - n + 1)):
-                print(f'REPITE   tramo {i} repite "{" ".join(w[:n])}" del tramo {j} → probá --quitar {tr[j][0]:.2f}-{tr[i][0]:.2f}')
+                print(f'REPITE   tramo {i} repite "{" ".join(w[:n])}" del tramo {j} → prueba --quitar {tr[j][0]:.2f}-{tr[i][0]:.2f}')
                 alertas += 1
                 hecho = True
                 break
@@ -73,7 +73,7 @@ for i in range(1, len(tr)):
         nx = tr[i + 1][3]
         pref = lambda u, v: len(os.path.commonprefix([u, v]))
         if pref(''.join(w), nx[0]) >= 4 or all(u == v or v.startswith(u) for u, v in zip(w, nx)):
-            print(f'ARRANQUE tramo {i} ("{t}") es el comienzo del tramo {i + 1} → probá --quitar {x:.2f}-{tr[i + 1][0]:.2f}')
+            print(f'ARRANQUE tramo {i} ("{t}") es el comienzo del tramo {i + 1} → prueba --quitar {x:.2f}-{tr[i + 1][0]:.2f}')
             alertas += 1
     if y - x < .35:
         print(f'CORTA    tramo {i} dura {y - x:.2f} s con "{t}"')

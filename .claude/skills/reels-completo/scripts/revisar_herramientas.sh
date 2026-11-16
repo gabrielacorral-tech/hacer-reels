@@ -9,6 +9,6 @@ chk "ffmpeg"      "ffmpeg -version"                       "references/instalar.m
 chk "whisper.cpp" "command -v whisper-cli || command -v whisper-cpp || command -v main" "references/instalar.md (whisper.cpp)"
 chk "yt-dlp"      "yt-dlp --version"                      "references/instalar.md (yt-dlp)"
 chk "node"        "node --version"                        "references/instalar.md (Node)"
-chk "remotion"    "npx --no-install remotion --version"   "references/instalar.md (Remotion, solo si hacés animaciones)"
-chk "hyperframes" "npx --no-install hyperframes --help"   "references/instalar.md (HyperFrames, solo si hacés animaciones)"
+chk "remotion"    "npx --no-install remotion --version"   "references/instalar.md (Remotion, solo si haces animaciones)"
+chk "hyperframes" "npx --no-install hyperframes --help"   "references/instalar.md (HyperFrames, solo si haces animaciones)"
 echo; [ $falta -eq 0 ] && echo "Todo listo." || echo "Faltan $falta. Remotion y HyperFrames son opcionales."
